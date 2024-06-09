@@ -2,24 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
-    <title>Form</title>
+    <title>Home page</title>
 </head>
 <body>
+<header>
     <div class="container">
-        <h1><span class="login">Login</span><span class="border-line">I</span><span class="register">Register</span></h1>
-        <form class="form">
-            <div class="subTitle">Enter your email and password to register.</div>
-            <input type="text" name="username" placeholder="Username" class="control">
-            <input type="email" name="email" placeholder="Enter your email address" class="control">
-            <input type="password" name="password" placeholder="Password" class="control">
-            <input type="password" name="confirmPassword" placeholder="Confirm Password" class="control">
-            <input type="submit" value="Register" class="control btnRegister">
-            <div class="otherRegister"><div class="orwLine"></div><div>Or register with</div><div class="orwLine"></div></div>
-        <a href="#" class="control btnGoogle">Continue with Google</a>
-        <a href="#" class="control btnFacebook">Continue with Facebook</a>
-        </form>
+        <div class="logo"><img src="./img/Logo.png" alt="Logo Greenshop"></div>
+        <nav>
+            <ul>
+                <li>
+                    <a class="active" href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Shop</a>
+                </li>
+                <li>
+                    <a href="#">Plant Care</a>
+                </li>
+                <li>
+                    <a href="#">Blogs</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="login">
+            <a class="logoutIcon" href="registration.html">Login</a>
+        </div>
     </div>
+</header>
+
+<main>
+    <div class="container">
+        <div class="description">
+            <h2>Welcome to GreenShop</h2>
+            <h1>Let’s Make a Better <span>Planet</span></h1>
+            <p>We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</p>
+            <button>SHOP NOW</button>
+        </div>
+        <div class="picture">
+            <div class="picture__parent">
+                <img src="./img/picture.png" alt="Picture with a plant">
+                <div class="picture__children"><img src="img/picture2.png"></div>
+            </div>
+        </div>
+    </div>
+</main>
+
 </body>
 </html>
