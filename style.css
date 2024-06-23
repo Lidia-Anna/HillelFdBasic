@@ -1,13 +1,52 @@
+@font-face {
+    font-family: "Cera Pro";
+    src: url("/fonts/CeraPro-Regular.ttf"),
+    url("/fonts/CeraPro-Regular.woff"),
+    url("/fonts/CeraPro-Regular.woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Cera Pro";
+    src: url("/fonts/CeraPro-Light.ttf"),
+    url("/fonts/CeraPro-Light.woff"),
+    url("/fonts/CeraPro-Light.woff2");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Cera Pro";
+    src: url("/fonts/CeraPro-Medium.ttf"),
+    url("/fonts/CeraPro-Medium.woff"),
+    url("/fonts/CeraPro-Medium.woff2");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Cera Pro";
+    src: url("/fonts/CeraPro-Bold.ttf"),
+    url("/fonts/CeraPro-Bold.woff"),
+    url("/fonts/CeraPro-Bold.woff2");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Cera Pro";
+    src: url("/fonts/CeraPro-Black.ttf"),
+    url("/fonts/CeraPro-Black.woff"),
+    url("/fonts/CeraPro-Black.woff2");
+    font-weight: 900;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Cera Pro", serif;
 }
 
 .container{
     width: 83.33333%;
     margin: 0 auto;
-
 }
 
 header .container{
@@ -33,9 +72,12 @@ ul li a{
     color: #3d3d3d;
 }
 
-a.active{
+nav ul li a:hover{
     font-weight: 700;
+    padding-bottom: 35px;
+    border-bottom: #46A358 solid 3px;
 }
+
 
 .description, .picture{
     display: inline-block;
@@ -109,6 +151,7 @@ a.active{
 }
 .description h1{
     font-size: 70px;
+    font-weight: 900;
     line-height: 1;
     text-transform: uppercase;
     color: #3d3d3d;
@@ -135,8 +178,145 @@ a.active{
     line-height: 1.25;
 }
 
-.container::after {
+.del__float::after{
     content: "";
-    display: table;
+    display: block;
     clear: both;
 }
+
+section{
+    margin-top: 26px;
+}
+
+.categori{
+    color: #3D3D3D;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    padding-bottom: 15px;
+}
+
+.categori__item{
+    color: #3D3D3D;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    padding: 5px 12px;
+}
+
+.categori__item a:hover{
+    color: #46A358;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.aside__list{
+    background-color: #FBFBFB;
+    padding: 14px 18px;
+    padding-bottom: 300px;
+}
+
+aside{
+    width: 25.833%;
+    display: inline-block;
+}
+.aside{
+    display: block;
+}
+
+.catalog{
+    width: 73%;
+    display: inline-block;
+    padding-left: 50px;
+    vertical-align: top;
+}
+
+.catalog__categori__item{
+    margin-right: 37px;
+    padding-right: 0;
+    color: #3D3D3D;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.catalog__categori__item a:hover{
+    color: #46A358;
+    padding-bottom: 7px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    border-bottom: #46A358 solid 2px;
+}
+
+.catalog__sort{
+    color: #3D3D3D;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+.card__wraper{
+    padding-top: 31px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 70px 30px;
+}
+
+.card{
+    display: inline-block;
+    width: 30.71%;
+}
+
+.catalog__nav{
+    display: flex;
+    justify-content: space-between;
+}
+.catalog_nav__categori{
+    display: inline-block;
+}
+
+.catalog__sort{
+    display: inline-block;
+}
+
+.aside__baner{
+    width: 100%;
+    display: block;
+}
+
+.aside__baner__img{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.categori__item{
+    display: block;
+}
+
+.card__name{
+    margin-top: 12px;
+    color: #3D3D3D;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.card__price{
+    margin-top: 6px;
+    color: #46A358;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+}
+
