@@ -1,40 +1,40 @@
 @font-face {
     font-family: "Cera Pro";
-    src: url("./fonts/CeraPro-Regular.ttf"),
-    url("./fonts/CeraPro-Regular.woff"),
-    url("./fonts/CeraPro-Regular.woff2");
+    src: url("../fonts/CeraPro-Regular.ttf"),
+    url("../fonts/CeraPro-Regular.woff"),
+    url("../fonts/CeraPro-Regular.woff2");
     font-weight: 400;
 }
 
 @font-face {
     font-family: "Cera Pro";
-    src: url("./fonts/CeraPro-Light.ttf"),
-    url("./fonts/CeraPro-Light.woff"),
-    url("./fonts/CeraPro-Light.woff2");
+    src: url("../fonts/CeraPro-Light.ttf"),
+    url("../fonts/CeraPro-Light.woff"),
+    url("../fonts/CeraPro-Light.woff2");
     font-weight: 200;
 }
 
 @font-face {
     font-family: "Cera Pro";
-    src: url("./fonts/CeraPro-Medium.ttf"),
-    url("./fonts/CeraPro-Medium.woff"),
-    url("./fonts/CeraPro-Medium.woff2");
+    src: url("../fonts/CeraPro-Medium.ttf"),
+    url("../fonts/CeraPro-Medium.woff"),
+    url("../fonts/CeraPro-Medium.woff2");
     font-weight: 500;
 }
 
 @font-face {
     font-family: "Cera Pro";
-    src: url("./fonts/CeraPro-Bold.ttf"),
-    url("./fonts/CeraPro-Bold.woff"),
-    url("./fonts/CeraPro-Bold.woff2");
+    src: url("../fonts/CeraPro-Bold.ttf"),
+    url("../fonts/CeraPro-Bold.woff"),
+    url("../fonts/CeraPro-Bold.woff2");
     font-weight: 700;
 }
 
 @font-face {
     font-family: "Cera Pro";
-    src: url("./fonts/CeraPro-Black.ttf"),
-    url("./fonts/CeraPro-Black.woff"),
-    url("./fonts/CeraPro-Black.woff2");
+    src: url("../fonts/CeraPro-Black.ttf"),
+    url("../fonts/CeraPro-Black.woff"),
+    url("../fonts/CeraPro-Black.woff2");
     font-weight: 900;
 }
 :root{
