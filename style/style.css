@@ -49,7 +49,7 @@
     margin: 0 auto;
 }
 
-.header{
+header .container{
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
@@ -74,7 +74,7 @@ nav ul li a{
 nav ul li a:hover{
     font-weight: 700;
     padding-bottom: 35px;
-    border-bottom: #46A358 solid 3px;
+    border-bottom: 3px solid #46A358;
 }
 
 
@@ -293,6 +293,61 @@ aside{
     display: block;
 }
 
+.card__build{
+}
+.build-with-icons{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+.icons{
+    display: none;
+    position: absolute;
+    bottom: 7px;
+}
+.icon{
+    margin: 0 15px;
+    width: 20px;
+    height: 20px;
+
+}
+.build-with-icons:hover{
+    border-top: #46A358 solid 1px;
+}
+
+.build-with-icons:hover .icons{
+    display: flex;
+}
+.card-price-sale{
+    display: flex;
+    align-items: center;
+}
+.card__price-with-sale{
+    margin-left: 16px;
+    color: #A5A5A5;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 88.889%;
+    text-decoration: line-through;
+}
+.wraper-label-sale{
+    position: relative;
+}
+.label-sale{
+    position: absolute;
+    left: 0;
+    top: 14px;
+    background-color: #46A358;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    padding: 6px 8px;
+    display: inline-block;
+}
 .card__name{
     margin-top: 12px;
     color: #3D3D3D;
@@ -314,11 +369,12 @@ aside{
 .top-product{
     display: flex;
     justify-content: space-between;
-    column-gapcgap: 28px;
+    column-gap: 28px;
     margin-bottom: 138px;
 }
 .product-pflance{
     display: flex;
+    width: 45%;
     justify-content: space-between;
     align-items: center;
     text-align: right;
