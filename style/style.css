@@ -37,6 +37,17 @@
     url("../fonts/CeraPro-Black.woff2");
     font-weight: 900;
 }
+@font-face {
+    font-family: "Encode Sans Expanded";
+    src: url("../fonts/EncodeSansExpanded-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Encode Sans Expanded";
+    src: url("../fonts/EncodeSansExpanded-Bold.ttf");
+    font-weight: 700;
+}
 *{
     margin: 0;
     padding: 0;
@@ -57,24 +68,128 @@ header .container{
     padding-bottom: 17px;
     border-bottom: 0.3px solid #46A35880;
 }
-nav ul{
-    display: flex;
-}
+
 nav ul li{
     list-style: none;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+nav>ul{
+    display: flex;
+}
+
+nav>ul>li{
     padding-right: 50px;
 }
 
-nav ul li a{
+nav>ul>li>a{
     text-decoration: none;
     font-size: 16px;
     color: #3d3d3d;
+    padding-bottom: 35px;
 }
 
-nav ul li a:hover{
+nav>ul>li:hover>a,
+nav>ul>li:focus-within>a{
     font-weight: 700;
-    padding-bottom: 35px;
     border-bottom: 3px solid #46A358;
+}
+
+.inner-first-level-menu li>a{
+    text-align: left;
+    display: block;
+    color: #3D3D3D;
+    font-family: "Encode Sans Expanded", serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.inner-first-level-menu{
+    display: flex;
+    width: 188px;
+    left: -50%;
+    flex-direction: column;
+    justify-content: left;
+    background-color: #EDF6EE;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 10;
+    top: 70px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.inner-first-level-menu li{
+    padding: 8px 14px;
+}
+
+.inner-first-level-menu>li:hover a{
+    color: #FFFFFF;
+    font-family: "Encode Sans Expanded", serif;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.inner-first-level-menu li:hover{
+    background-color: #1A712A;
+}
+/*
+.inner-first-level-menu>li:hover .inner-second-level-menu{
+    display: block;
+}*/
+.inner-second-level-menu{
+    width: 178px;
+    left: 100%;
+    flex-direction: column;
+    justify-content: left;
+    background-color: #EDF6EE;
+    position: absolute;
+    top: -109px;
+    z-index: 11;
+    display: none;
+}
+
+
+.inner-second-level-menu li{
+    padding: 8px 14px;
+}
+
+.inner-second-level-menu li:hover a{
+    color: #FFFFFF!important;
+    font-family: "Encode Sans Expanded", serif;
+    font-weight: 700!important;;
+    line-height: normal;
+}
+.inner-second-level-menu li>a{
+    text-align: left;
+    display: block;
+    color: #3D3D3D!important;
+    font-family: "Encode Sans Expanded", serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400!important;;
+    line-height: normal;
+}
+
+.inner-second-level-menu li:hover{
+    background-color: #1A712A;
+}
+
+header ul>li:hover > ul{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.1s;
+}
+
+.inner-first-level-menu li:hover .inner-second-level-menu{
+    display: block;
 }
 
 
@@ -115,6 +230,8 @@ nav ul li a:hover{
 }
 
 .main{
+    margin-top: 12px;
+    background-color: rgba(245, 245, 245, 0.5);
     display: flex;
     justify-content: space-between;
 }
@@ -132,6 +249,7 @@ nav ul li a:hover{
     width: 58%;
     vertical-align: top;
     padding-top: 68px;
+    padding-left: 40px;
 }
 .description h2{
     font-size: 14px;
@@ -386,7 +504,7 @@ aside{
     font-size: 18px;
     font-style: normal;
     font-weight: 900;
-    line-height: 24px; /* 133.333% */
+    line-height: 133.333px;
     text-transform: uppercase;
 }
 .product-description{
