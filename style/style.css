@@ -68,10 +68,11 @@ header .container{
     padding-bottom: 17px;
     border-bottom: 0.3px solid #46A35880;
 }
-
+header nav ul li{
+    position: relative;
+}
 nav ul li{
     list-style: none;
-    position: relative;
 }
 
 nav ul li a {
@@ -81,19 +82,19 @@ nav>ul{
     display: flex;
 }
 
-nav>ul>li{
+header nav>ul>li{
     padding-right: 50px;
 }
 
-nav>ul>li>a{
+header nav>ul>li>a{
     text-decoration: none;
     font-size: 16px;
     color: #3d3d3d;
     padding-bottom: 35px;
 }
 
-nav>ul>li:hover>a,
-nav>ul>li:focus-within>a{
+header nav>ul>li:hover>a,
+header nav>ul>li:focus-within>a{
     font-weight: 700;
     border-bottom: 3px solid #46A358;
 }
@@ -504,7 +505,7 @@ aside{
     font-size: 18px;
     font-style: normal;
     font-weight: 900;
-    line-height: 133.333px;
+    line-height: 133.333%;
     text-transform: uppercase;
 }
 .product-description{
@@ -647,4 +648,221 @@ aside{
 }
 .card-icon-arrow::after {
     background-image: url(../img/ArrowRightBlack.svg);
+}
+.newsletters{
+    display: flex;
+    background: #FBFBFB;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.cards-with-kaktus{
+    display: flex;
+    width: 80%;
+}
+.card-kaktus{
+    padding: 0 25px;
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-kaktus>img{
+    padding-bottom: 15px;
+}
+.card-kaktus-title{
+    color: #3D3D3D;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    padding-bottom: 10px;
+}
+.card-kaktus-description{
+    color: #727272;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+.card-kaktus.card-with-border{
+    border-right: rgba(70, 163, 88, 0.10) solid 1px;
+    border-left: rgba(70, 163, 88, 0.10) solid 1px;
+    align-self: center;
+}
+.bgimage1,
+.bgimage2,
+.bgimage3{
+    height: 100px;
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+.bgimage1{
+    background-image: url("../img/Picture-kakrus1.png");
+}
+.bgimage2{
+    background-image: url("../img/Picture_kaktus2.png");
+
+}
+.bgimage3{
+    background-image: url("../img/Picture-kaktus3.png");
+}
+
+.subscribe{
+    padding-top: 15px;
+}
+.newsletter{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 37px;
+    padding-right: 25px;
+}
+.newsletter>h5{
+    color: #3D3D3D;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    padding-bottom: 25px;
+}
+.newsletter>form{
+    padding-bottom: 18px;
+    width: 100%;
+    display: flex;
+}
+
+.newsletter>form>button{
+    padding: 12px 26px;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    background-color: #46A358;
+    border: none;
+    border-radius: 0 6px 6px 0;
+
+}
+
+.newsletter>form>input{
+    width: 354px;
+    height: 40px;
+    padding: 11px;
+    border: none;
+    border-radius: 6px 0 0 6px;
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.06);
+}
+.newsletter>form>input[placeholder]{
+    color: #ACACAC;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+.newsletter-description{
+    color: #727272;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+.nomargin{
+    margin: 0;
+}
+.contaction{
+    height: 88px;
+    padding: 28px 24px;
+    background: linear-gradient(to right, #EDF6EF, #52C368);
+    display: flex;
+    justify-content: space-between;
+}
+.adress,
+.mail,
+.tel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-text{
+    padding-left: 9px;
+    color: #3D3D3D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FBFBFB;
+    padding: 33px 25px;
+    border-bottom: rgba(70, 163, 88, 0.20) solid 1px;
+    margin-bottom: 7px;
+}
+.acount nav ul,
+.help nav ul,
+.categories nav ul,
+.social-media nav ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.social-media{
+    width: 25%;
+}
+
+.acount h5,
+.help h5,
+.categories h5,
+.social-media h5,
+.social-media h5{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    padding-bottom: 10px;
+}
+
+.acount nav ul li,
+.help nav ul li,
+.categories nav ul li,
+.social-media nav ul li{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.acount nav ul li a,
+.help nav ul li a,
+.categories nav ul li a,
+.social-media nav ul li a {
+    color: #3D3D3D;
+}
+
+.social-media-icons{
+    display: flex;
+    padding: 10px 0 33px 0;
+}
+.social-media img{
+    padding-top: 6px;
+}
+.svg-icon{
+    padding-right: 10px;
+}
+
+.reserved{
+    color: #3D3D3D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    padding-bottom: 22px;
 }
