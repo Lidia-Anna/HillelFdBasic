@@ -6,6 +6,9 @@
     <title>Home page</title>
 </head>
 <body>
+<div id="preloader">
+    <div class="preloader"></div>
+</div>
 <header>
     <div class="container header">
         <div class="logo"><img src="./img/Logo.png" alt="Logo Greenshop"></div>
@@ -327,8 +330,8 @@
                 <img class="card-img" src="./img/01.png" alt="Cactus & Succulent Care Tips">
                 <div class="card-container">
                     <p class="blog-card-subtitle">September 12 I Read in 6 minutes</p>
-                    <h5 class="blog-card-title">Cactus & Succulent<br> Care Tips</h5>
-                    <p class="blog-card-description">Cacti are succulents are easy care<br> plants for any home or patio. </p>
+                    <h5 class="blog-card-title">Cactus & Succulent Care Tips</h5>
+                    <p class="blog-card-description">Cacti are succulents are easy care plants for any home or patio. </p>
                     <a class="read-more" href="#">Read More<svg class="black-arrow-right-icon"><use xlink:href="#black-arrow-right"></use></svg></a>
                 </div>
             </div>
@@ -336,8 +339,8 @@
                 <img class="card-img" src="./img/02.png" alt="Top 10 Succulents for Your Home">
                 <div class="card-container">
                     <p class="blog-card-subtitle">September 13  I Read in 2 minutes</p>
-                    <h5 class="blog-card-title">Top 10 Succulents for<br> Your Home</h5>
-                    <p class="blog-card-description">Best in hanging baskets. Prefers<br> medium to high light.</p>
+                    <h5 class="blog-card-title">Top 10 Succulents for Your Home</h5>
+                    <p class="blog-card-description">Best in hanging baskets. Prefers medium to high light.</p>
                     <a class="read-more" href="#">Read More<svg class="black-arrow-right-icon"><use xlink:href="#black-arrow-right"></use></svg></a>
                 </div>
             </div>
@@ -345,8 +348,8 @@
                 <img class="card-img" src="./img/03.png" alt="Cacti & Succulent Care Tips">
                 <div class="card-container">
                     <p class="blog-card-subtitle">September 15  I Read in 3 minutes</p>
-                    <h5 class="blog-card-title">Cacti & Succulent<br> Care Tips</h5>
-                    <p class="blog-card-description">Cacti and succulents thrive in<br> containers and because most are.</p>
+                    <h5 class="blog-card-title">Cacti & Succulent Care Tips</h5>
+                    <p class="blog-card-description">Cacti and succulents thrive in containers and because most are.</p>
                     <a class="read-more" href="#">Read More<svg class="black-arrow-right-icon"><use xlink:href="#black-arrow-right"></use></svg></a>
                 </div>
             </div>
@@ -354,8 +357,8 @@
                 <img class="card-img" src="./img/04.png" alt="Best Houseplants Room by Room">
                 <div class="card-container">
                     <p class="blog-card-subtitle">September 15  I Read in 2 minutes</p>
-                    <h5 class="blog-card-title">Best Houseplants<br> Room by Room</h5>
-                    <p class="blog-card-description">The benefits of houseplants are<br> endless. In addition to.</p>
+                    <h5 class="blog-card-title">Best HouseplantsRoom by Room</h5>
+                    <p class="blog-card-description">The benefits of houseplants are endless. In addition to.</p>
                     <a class="read-more" href="#">Read More<svg class="black-arrow-right-icon"><use xlink:href="#black-arrow-right"></use></svg></a>
                 </div>
             </div>
@@ -403,18 +406,41 @@
     <div class="container">
         <div class="contaction">
             <div class="logo"><img src="./img/Logo.png" alt="Logo Greenshop"></div>
-            <div class="adress">
+            <a href="https://www.google.com/maps/search/?api=1&query=70+West+Buckingham+Ave,+Farmingdale,+NY+11735" class="adress" target="_blank">
                 <svg class="map-icon"><use xlink:href="#map"></use></svg>
-                <p class="contact-text">70 West Buckingham Ave.<br> Farmingdale, NY 11735</p>
-            </div>
-            <div class="mail">
+                <span class="contact-text">70 West Buckingham Ave.<br> Farmingdale, NY 11735</span>
+            </a>
+            <a href="mailto:contact@greenshop.com" class="mail">
                 <svg class="mail-icon"><use xlink:href="#mail"></use></svg>
-                <p class="contact-text">contact@greenshop.com</p>
-            </div>
-            <div class="tel">
+                <span class="contact-text">contact@greenshop.com</span>
+            </a>
+            <a href="tel:+8801911717490" class="tel">
                 <svg class="tel-icon"><use xlink:href="#tel"></use></svg>
-                <p class="contact-text">+88 01911 717 490</p>
-            </div>
+                <span class="contact-text">+88 01911 717 490</span>
+            </a>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="addition-service">
+            <form>
+                <label for="online-bye" class="custom-checkbox">
+                    <input type="checkbox" id="online-bye">
+                    <div class="custom-check-icon"></div>
+                    Online bye
+                </label>
+                <label for="online-sale" class="custom-checkbox">
+                    <input type="checkbox" id="online-sale">
+                    <div class="custom-check-icon"></div>
+                    Online sale
+                </label>
+                <label for="online-delive" class="custom-checkbox">
+                    <input type="checkbox" id="online-delive">
+                    <div class="custom-check-icon"></div>
+                    Online delivery
+                </label>
+            </form>
         </div>
     </div>
 </section>
@@ -462,25 +488,23 @@
                 <h5>Social Media</h5>
                 <div class="social-media-icons">
                     <div class="svg-icon">
-                        <svg class="facebook-g-icon"><use xlink:href="#facebook-green"></use></svg>
-                    </div>
-
-                    <div class="svg-icon">
-                        <svg class="instagram-icon"><use xlink:href="#instagram"></use></svg>
-                    </div>
-
-                    <div class="svg-icon">
-                        <svg class="twiter-icon"><use xlink:href="#twiter"></use></svg>
+                        <a href="#"><svg class="facebook-g-icon"><use xlink:href="#facebook-green"></use></svg></a>
                     </div>
                     <div class="svg-icon">
-                        <svg class="linkedin-icon"><use xlink:href="#linkedin"></use></svg>
+                        <a href="#"><svg class="instagram-icon"><use xlink:href="#instagram"></use></svg></a>
                     </div>
                     <div class="svg-icon">
-                        <svg class="utub-icon"><use xlink:href="#utub"></use></svg>
+                        <a href="#"><svg class="twiter-icon"><use xlink:href="#twiter"></use></svg></a>
+                    </div>
+                    <div class="svg-icon">
+                        <a href="#"><svg class="linkedin-icon"><use xlink:href="#linkedin"></use></svg></a>
+                    </div>
+                    <div class="svg-icon">
+                        <a href="#"><svg class="utub-icon"><use xlink:href="#utub"></use></svg></a>
                     </div>
                 </div>
                 <h5>We accept</h5>
-                <img src="./img/pay-card.png" alt="pay card">
+                <a href="#"><img src="./img/pay-card.png" alt="pay card"></a>
             </div>
         </div>
     </div>
@@ -551,5 +575,11 @@
         <path d="M6.375 3.75C6.375 3.75 11.625 6.858 11.625 9C11.625 11.1413 6.375 14.25 6.375 14.25" stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
 </svg>
+<script>
+    const preloader=document.getElementById("preloader");
+    setTimeout(() => {
+        preloader.style.display = "none"
+    }, 1000)
+</script>
 </body>
 </html>
