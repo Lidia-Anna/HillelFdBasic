@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
     <title>Home page</title>
 </head>
@@ -12,7 +13,10 @@
 <header>
     <div class="container header">
         <div class="logo"><img src="./img/Logo.png" alt="Logo Greenshop"></div>
-        <nav>
+        <button class="header-burger" id="burger">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="menu">
             <ul>
                 <li>
                     <a href="#">Home</a>
@@ -56,9 +60,9 @@
     <div class="container main">
         <div class="description">
             <h2>Welcome to GreenShop</h2>
-            <h1>Let’s Make a<br> Better <span>Planet</span></h1>
-            <p>We are an online plant shop offering a wide range of cheap and trendy plants. Use<br> our plants to create an unique Urban Jungle. Order your favorite plants!</p>
-            <button>SHOP NOW</button>
+            <h1>Let’s Make a Better <span>Planet</span></h1>
+            <p>We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</p>
+            <div><button>SHOP NOW</button></div>
         </div>
         <div class="picture">
             <div class="picture__parent">
@@ -197,10 +201,8 @@
                 </div>
                 <div class="card">
                     <div class="build-with-icons">
-                        <div class="wraper-label-sale">
                             <img class="card__build" src="./img/build3.png" alt="African Violet">
                             <div class="label-sale">13% OFF</div>
-                        </div>
                         <div class="icons">
                             <div class="appear-icon"><a href="#"><svg class="shop-icon"><use xlink:href="#shopping1"></use></svg></a></div>
                             <div class="appear-icon"><a href="#"><svg class="heart-icon"><use xlink:href="#heart1"></use></svg></a></div>
@@ -357,7 +359,7 @@
                 <img class="card-img" src="./img/04.png" alt="Best Houseplants Room by Room">
                 <div class="card-container">
                     <p class="blog-card-subtitle">September 15  I Read in 2 minutes</p>
-                    <h5 class="blog-card-title">Best HouseplantsRoom by Room</h5>
+                    <h5 class="blog-card-title">Best Houseplants Room by Room</h5>
                     <p class="blog-card-description">The benefits of houseplants are endless. In addition to.</p>
                     <a class="read-more" href="#">Read More<svg class="black-arrow-right-icon"><use xlink:href="#black-arrow-right"></use></svg></a>
                 </div>
@@ -418,29 +420,6 @@
                 <svg class="tel-icon"><use xlink:href="#tel"></use></svg>
                 <span class="contact-text">+88 01911 717 490</span>
             </a>
-        </div>
-    </div>
-</section>
-<section>
-    <div class="container">
-        <div class="addition-service">
-            <form>
-                <label for="online-bye" class="custom-checkbox">
-                    <input type="checkbox" id="online-bye">
-                    <div class="custom-check-icon"></div>
-                    Online bye
-                </label>
-                <label for="online-sale" class="custom-checkbox">
-                    <input type="checkbox" id="online-sale">
-                    <div class="custom-check-icon"></div>
-                    Online sale
-                </label>
-                <label for="online-delive" class="custom-checkbox">
-                    <input type="checkbox" id="online-delive">
-                    <div class="custom-check-icon"></div>
-                    Online delivery
-                </label>
-            </form>
         </div>
     </div>
 </section>
@@ -580,6 +559,11 @@
     setTimeout(() => {
         preloader.style.display = "none"
     }, 1000)
+    document.addEventListener("DOMContentLoaded", function (){
+    document.getElementById("burger").addEventListener("click", function (){
+        document.querySelector(".header").classList.toggle("open")
+    })
+    })
 </script>
 </body>
 </html>
